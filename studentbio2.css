@@ -80,7 +80,7 @@ html::after {
     border-radius: 0px 180px 180px 0px;
 }
 .about-me-container:hover .about-me-text {
-    color: rgb(114, 114, 114);
+    color: rgb(223, 223, 223);
     transition: .05s ease;
 }
 .about-me-container:hover {
@@ -91,7 +91,7 @@ html::after {
 .about-me-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
-    color: rgb(107, 107, 107);
+    color: rgb(158, 158, 158);
     position: absolute;
     right: 15%;
     top: 20px;
@@ -189,6 +189,7 @@ div.name-image-container>img.personal-photo {
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
     border-radius: 15px 0px 0px 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
    
 }
 
