@@ -1,10 +1,9 @@
-function contactdisplay() {
-    var x = document.getElementById("contact-info");
-    if (x.style.display === "hidden") {
-        x.style.display = "block";
+document.getElementById("contact-link").onclick = function display-contact-info()
+
+function display-contact-info() {
+    if (document.getElementById("contact-box").style.display === "hidden") {
+        document.getElementById("contact-box").style.display = "block";
     } else {
-        x.style.display = "hidden";
+        document.getElementById("contact-box").style.display = "hidden";
     }
 }
-document.getElementById("contact-link").onclick = contactdisplay();
-

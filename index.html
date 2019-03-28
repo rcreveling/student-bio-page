@@ -3,7 +3,12 @@
 
 <head>
     <title>Ryan Creveling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="studentbio2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascriopt" src="student-bio.js"></script>
 </head>
 
@@ -11,32 +16,36 @@
     <div class="header-container, clearfix">
         <h1>Student Bio</h1>
         <div class="external-page-links">
-            <button onclick="contactdisplay()" id="contact-link" class="header-link">Contact</button>
-            <button class="header-link" href=studentbio2portfolio.html>Portfolio</button>
+            <button type="button" id="contact-link" class="btn"><a href="https://github.com/rcreveling" target="_blank" style="color:black">GitHub</a></button>
+            <br>
+            <button type="button" class="btn" href=studentbio2portfolio.html>Portfolio</button>
         </div>
     </div>
     <div class="primary-container">
             <div class="about-me-container">
                 <div class=about-me-text>
-                    <h3>"A student, scholar, and overall good dude" -Dwayne Michael Scott Johnson
+                    <p>"A student, scholar, and overall good dude" -Dwayne Michael Scott Johnson
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cumque 
                         suscipit qui aperiam, architecto dolores consequatur aliquam aliquid aut nostrum 
                         deleniti iure voluptates nam labore tenetur impedit praesentium beatae est.
-                    </h3>
+                    </p>
                 </div>
         
             </div>
-            <div class="contact-info">
-                    <h2>Contact Info</h2>
+            <div class="contact-info" id="contact-box">
+                <h2>Contact Info</h2>
+                <div class="contact-hover">
                     
-                    <ul>
-                        <li>E-mail: <a href="ryancreveling@gmail.com">ryancreveling@gmail.com</a></li>
-                        <li>GitHub: <a href="https://github.com/rcreveling">rcreveling</a></li>
-                        <li>Portfolio: Just.. You... Wait.</li>
-                    </ul>
+                
+                        <ul>
+                            <li>E-mail: <a href="ryancreveling@gmail.com" target="_blank">ryancreveling@gmail.com</a></li>
+                            <li>GitHub: <a href="https://github.com/rcreveling" target="_blank">rcreveling</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/ryan-creveling-48b835181/" target="_blank">Ryan Creveling</a></li>
+                        </ul>
+                    </div>
                 </div>
             <div class="name-image-container">
-                <h2>Ryan Creveling</h2>
+                <p>Ryan Creveling</p>
                 <br>
                 <img class="personal-photo" src="50895600_2432826673414171_266436024169660416_o.jpg">
             </div>
