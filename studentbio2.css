@@ -16,18 +16,42 @@
 h1 {
     display: inline-block;
     margin-top: 0;
-    background-image: linear-gradient(rgba(49, 31, 61, 0.4), rgba(133, 133, 133, 0.8));
+    background-image: linear-gradient(rgba(49, 31, 61, .9), rgba(133, 133, 133, .1));
     width: 35%;
     padding: 20px 10px 20px 20%;
     border-radius: 0px 180px 180px 0px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px 0px 0.1 #888888;
     text-align: center;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-body {
+html {
     margin: 0;
-    background-image: linear-gradient(rgba(188, 179, 219, 0.5), rgba(68, 56, 87, 0.4));
+    display: block;
+    position: relative; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+}
+
+html::after {
+    content: "";
+    background: url("abstract-astro-astronomy-956999.jpg") no-repeat center center fixed;
+    opacity: .5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .primary-container {
@@ -43,19 +67,27 @@ body {
     width: 55%;
     min-width: 45%;
     height: 22%;
-    background-color: rgba(114, 0, 143, 0.5);
+    background-color: rgba(114, 0, 143, 0.8);
     box-shadow: 5px 3px 3px #f5bff7;
     border-radius: 0px 180px 180px 0px;
-    
+}
+.about-me-container:hover .about-me-text {
+    color: rgb(114, 114, 114);
+    transition: .05s ease;
+}
+.about-me-container:hover {
+    background-color: rgba(114, 0, 143, 0.9);
+    transition: .2s ease;
 }
 
 .about-me-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
+    font-size: 17px;
+    color: rgb(107, 107, 107);
     position: absolute;
-    right: 20%;
+    right: 15%;
     top: 20px;
-    width: 35%;
+    width: 45%;
     height: auto;
 }
 
