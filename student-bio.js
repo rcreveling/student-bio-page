@@ -1,6 +1,6 @@
-document.getElementById("contact-link").onclick = function display-contact-info()
+document.getElementById("contact-link").onclick = function displaycontactinfo() {}
 
-function display-contact-info() {
+function displaycontactinfo() {
     if (document.getElementById("contact-box").style.display === "hidden") {
         document.getElementById("contact-box").style.display = "block";
     } else {
