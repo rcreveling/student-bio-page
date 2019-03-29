@@ -1,44 +1,3 @@
-.header-container {
-    width: 100%;
-    height: 60px;
-    background-color: rgba(128, 0, 255, 0.9);
-    z-index: 1;
-}
-
-body {
-    font-family: 'Cardo', serif;
-   }
-   
-   h1, h2, h3, h4, h5, h6, p, button, li, ul {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-   }
-
-.clearfix::after {
-    content: “”;
-    display: block;
-    clear: both;
-}
-
-h1 {
-    display: inline-block;
-    margin-top: 0;
-    background-image: linear-gradient(rgba(49, 31, 61, .9), rgba(133, 133, 133, .1));
-    width: 33%;
-    padding: 20px 300px 20px 20%;
-    border-radius: 0px 180px 180px 0px;
-    box-shadow: 5px 5px 5px 0px 0.1 #888888;
-    text-align: center;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 3px;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
 html {
     margin: 0;
     display: block;
@@ -62,6 +21,76 @@ html::after {
     z-index: -1;
 }
 
+body {
+    font-family: 'Cardo', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6, p, button, li, ul {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+   
+.header-container {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(128, 0, 255, 0.9);
+    z-index: 1;
+}
+
+.clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
+
+h1 {
+    display: inline-block;
+    margin-top: 0;
+    background-image: linear-gradient(to bottom right, rgba(53, 28, 70, 0.8), rgba(161, 158, 158, 0.01));
+    width: 33%;
+    padding: 20px 300px 20px 20%;
+    border-radius: 0px 0px 160px 0px;
+    box-shadow: 5px 5px 5px 0px 0.1 #888888;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.external-page-links {
+    float: right;
+    padding: 10px 25px 25px 25px;
+    margin-right: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 0px 0px 33.33% 33.33%;
+    background-color: white;
+}
+
+.header-link {
+    width: 60px;
+    height: 20px;
+    background: silver;
+    border-radius: 5px;
+    padding: 1px 3px;
+    box-shadow: 1px 1px 1px #000;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+    font-family: arial;
+    font-size: 12px;
+    line-height:20px;
+}
+
+.nav-color {
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
+}
+/* End Top */
 .primary-container {
     position: relative;
     height: 100%;
@@ -92,14 +121,15 @@ html::after {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     color: rgb(158, 158, 158);
-    position: absolute;
-    right: 15%;
+    position: relative;
+    left: 50%;
     top: 20px;
     width: 45%;
     height: auto;
+
 }
 
-
+/* End purple Text Bar */
 
 .name-image-container {
     padding-top: 2%;
@@ -131,34 +161,7 @@ div.name-image-container>img.personal-photo {
     border-radius: 50%;
 }
 
-/* Header Work */
-
-
-.external-page-links {
-    float: right;
-    padding: 10px 25px 25px 25px;
-    margin-right: 20%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    border-radius: 0px 0px 33.33% 33.33%;
-    background-color: white;
-}
-
-.header-link {
-    width: 60px;
-    height: 20px;
-    background: silver;
-    border-radius: 5px;
-    padding: 1px 3px;
-    box-shadow: 1px 1px 1px #000;
-    display: block;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
-    font-family: arial;
-    font-size: 12px;
-    line-height:20px;
-}
-
+/* Contact Info */
 
 .contact-info {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -174,9 +177,11 @@ div.name-image-container>img.personal-photo {
     height: 90%;
     border-radius: 15px 0px 0px 15px;
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
+    font-display: hidden;
 }
 
 .contact-hover {
+    padding-top: 10px;
     margin-top: 2px;
     position: absolute;
     right: 0;
@@ -201,4 +206,6 @@ div.name-image-container>img.personal-photo {
     width: 90%;
     height: 10%;
     transition: .3s ease;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
