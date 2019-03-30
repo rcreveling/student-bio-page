@@ -24,6 +24,7 @@ html::after {
 body {
     font-family: 'Cardo', serif;
     height: 100%;   
+    overflow-x: hidden;
    }
    
    h1, h2, h3, h4, h5, h6, p, button, li, ul {
@@ -90,6 +91,11 @@ h1 {
 
 .nav-color {
     background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
+    border-color: white;
+    border-width: 1px;
+    border-bottom: solid;
+
+
 }
 /* End Top */
 .primary-container {
@@ -207,7 +213,9 @@ div.name-image-container>img.personal-photo {
     border-style: ridge;
     border-color: white;
     border-width: 1px;
-    border-radius: 15px 0px 0px 15px;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
     font-display: hidden;
     transition: .3s ease;
@@ -220,18 +228,22 @@ div.name-image-container>img.personal-photo {
     border-style: ridge;
     border-color: white;
     border-width: 1px;
+    border-top: none;
+    border-right: none;
     right: 0;
     top: 50px;
     overflow: hidden;
-    width: 0px;
+    width: 15px;
     min-height: 100px;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 0px 0px 0px 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
     transition: .3s ease;
+    text-decoration: none;
+    text-overflow: hidden;
    
 }
 
@@ -242,6 +254,7 @@ div.name-image-container>img.personal-photo {
     1px -1px 0 rgb(189, 189, 189),
     -1px 1px 0 rgb(189, 189, 189),
     1px 1px 0 rgb(189, 189, 189);
+    box-shadow: 2px 0px 0px rgb(113, 117, 90);
     transition: .2s ease;
 }
 .contact-info:hover .contact-hover {
@@ -256,6 +269,8 @@ div.name-image-container>img.personal-photo {
     -1px 1px 0 rgb(189, 189, 189),
     1px 1px 0 rgb(189, 189, 189);
     letter-spacing: 1px;
+    text-decoration: none;
+    border-top: none;
 }
 
 /* Side Nav Tester */
@@ -270,6 +285,7 @@ div.name-image-container>img.personal-photo {
     font-size: 20px; /* Increase font size */
     color: black; /* White text color */
     border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+    overflow: hidden;
   }
   
   #mySidenav a:hover {
