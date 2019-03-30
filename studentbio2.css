@@ -233,10 +233,10 @@ div.name-image-container>img.personal-photo {
     right: 0;
     top: 50px;
     overflow: hidden;
-    width: 15px;
+    width: 10px;
     min-height: 100px;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
     border-radius: 0px 0px 0px 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -263,6 +263,7 @@ div.name-image-container>img.personal-photo {
     transition: .3s ease;
     overflow: hidden;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
     text-shadow:
     -1px -1px 0 rgb(189, 189, 189),
     1px -1px 0 rgb(189, 189, 189),
