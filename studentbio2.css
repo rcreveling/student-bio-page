@@ -179,7 +179,10 @@ h1 {
 div.name-image-container>img.personal-photo {
     position: absolute;
     left: 5%;
+    min-width: 70%;
     width: 90%;
+    min-height: 10%;
+    height: 23%;
     box-shadow: 3px 3px 3px #383838;
     opacity: .90;
     top: 11%;
@@ -195,8 +198,8 @@ div.name-image-container>img.personal-photo {
     text-align: center;
     margin-top: 0;
     margin-right: 0px;
-    background-image: linear-gradient(rgba(248, 255, 183, 0.5), rgba(255, 229, 158, 0.5));
-    width: 300px;
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
+        width: 300px;
     min-height: 50px;
     max-height: 1000px;
     height: 90%;
@@ -213,20 +216,25 @@ div.name-image-container>img.personal-photo {
     right: 0;
     top: 50px;
     overflow: hidden;
-    width: 0;
+    width: 0px;
     min-height: 100px;
     height: 100%;
-    background-color: rgba(152, 163, 91, .9);
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
     box-shadow: 2px 2px 2px rgb(113, 117, 90);
     border-radius: 15px 0px 0px 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
-    transition:.3s ease;
+    transition: .3s ease;
    
 }
 
 .contact-info:hover {
-    background-image: linear-gradient(rgba(248, 255, 183, 0.7), rgba(255, 229, 158, 0.7));
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
+    text-shadow:
+    -1px -1px 0 rgb(189, 189, 189),
+    1px -1px 0 rgb(189, 189, 189),
+    -1px 1px 0 rgb(189, 189, 189),
+    1px 1px 0 rgb(189, 189, 189);
     transition: .2s ease;
 }
 .contact-info:hover .contact-hover {
@@ -236,3 +244,59 @@ div.name-image-container>img.personal-photo {
     overflow: hidden;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+/* Side Nav Tester */
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    right: -140px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 150px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: black; /* White text color */
+    border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+    text-shadow:
+    -1px -1px 0 rgb(189, 189, 189),
+    1px -1px 0 rgb(189, 189, 189),
+    -1px 1px 0 rgb(189, 189, 189),
+    1px 1px 0 rgb(189, 189, 189);
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #game {
+    top: 16%;
+    background-image: linear-gradient(to right, rgba(110, 35, 35, 0.4), rgba(36, 45, 130, 0.5));
+    border-style: ridge;
+    border-width: 1px;
+    border-color: white;
+  }
+  
+  #webpage {
+    top: 23%;
+    background-image: linear-gradient(to right, rgba(107, 61, 61, 0.5), rgba(45, 53, 128, 0.6));
+    border-style: ridge;
+    border-width: 1px;
+    border-color: white;
+  }
+  
+  #projects {
+    top: 30%;
+    background-image: linear-gradient(to right, rgba(105, 57, 57, 0.6), rgba(68, 74, 124, 0.7));
+    border-style: ridge;
+    border-width: 1px;
+    border-color: white;
+  }
+  
+  #contact {
+    top: 37%;
+    background-image: linear-gradient(to right, rgba(102, 66, 66, 0.7), rgba(80, 84, 122, 0.8));
+    border-style: ridge;
+    border-width: 1px;
+    border-color: white;
+  }
