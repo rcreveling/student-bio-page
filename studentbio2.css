@@ -112,8 +112,10 @@ h1 {
 /* End Top */
 .primary-container {
     position: relative;
+    min-height: 1000px;
     height: 100%;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nav-item:hover {
@@ -212,7 +214,8 @@ h1 {
 .name-image-container {
     padding-top: 5%;
     position: relative;
-    height: 1000px;
+    min-height: 1000px;
+    height: 100%;
     width: 20%;
     left: 20px;
     background-image: linear-gradient(rgba(110, 35, 35, 0.8), rgba(0, 0, 0, 0.5));
@@ -232,6 +235,7 @@ h1 {
     1px 1px 0 #000;
     transition: 3s ease;
     z-index: 1;
+    margin-bottom: 0;
 }
 
 
