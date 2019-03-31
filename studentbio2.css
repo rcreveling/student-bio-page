@@ -97,12 +97,29 @@ h1 {
 
 
 }
+
+.main-navigation ul li {
+    border-right: 1px solid rgba(90, 90, 90, 0.8);
+    }
+    
+    .main-navigation ul li:first-of-type {
+    border-right: 1px solid rgba(90, 90, 90, 0.8));
+    }
+    
+    .main-navigation ul ul li {
+    border-right: none;
+    }
 /* End Top */
 .primary-container {
     position: relative;
     height: 100%;
     margin-top: 0;
 }
+
+.nav-item:hover {
+    font-size: calc(100% + 2%)
+}
+
 
 .about-me-container {
     position: absolute;
@@ -127,16 +144,34 @@ h1 {
 
 }
 
-.about-me-container2 {
+/* .about-me-container2 {
     position: absolute;
     left: 0;
     top: 36%;
-    width: 45%;
-    min-width: 45%;
-    height: 18%;
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    max-height: 18%;
+    z-index: 1;
     background-color: rgba(114, 0, 143, 0.8);
     box-shadow: 2px 2px 2px #f5bff7;
     border-radius: 0px 180px 180px 0px;
+    overflow-x: visible; /* Use horizontal scroller if needed */
+
+}
+
+/*.about-me-container3 {
+    position: absolute;
+    left: 0;
+    top: 54%;
+    width: 35%;
+    min-width: 25%;
+    height: 18%;
+    z-index: 0;
+    background-color: rgba(114, 0, 143, 0.8);
+    box-shadow: 2px 2px 2px #f5bff7;
+    border-radius: 0px 180px 180px 0px;
+    overflow-x: visible; /* Use horizontal scroller if needed */
 }
 
 .about-me-container:hover .about-me-text {
@@ -148,10 +183,15 @@ h1 {
     transition: .2s ease;
 }
 
-.about-me-container2:hover {
+/* .about-me-container2:hover {
     background-color: rgba(114, 0, 143, 0.9);
     transition: .2s ease;
 }
+
+.about-me-container3:hover {
+    background-color: rgba(114, 0, 143, 0.9);
+    transition: .2s ease;
+} */
 
 .about-me-text {
     display: block;
@@ -179,7 +219,7 @@ h1 {
     height: 1000px;
     width: 20%;
     left: 20px;
-    background-image: linear-gradient(rgba(133, 133, 133, 0.8), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(110, 35, 35, 0.8), rgba(0, 0, 0, 0.5));
     text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -194,7 +234,11 @@ h1 {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+    transition: 3s ease;
+    z-index: 1;
 }
+
+
 
 div.name-image-container>img.personal-photo {
     position: absolute;
@@ -207,6 +251,16 @@ div.name-image-container>img.personal-photo {
     opacity: .90;
     top: 13%;
     border-radius: 50%;
+}
+
+.name-image-container:hover .name-image-container>img.personal-photo{
+    transition: 3s ease;
+    border-right: 2px;
+    border-left: 2px;
+}
+.name-image-container:hover {
+    transition: 3s ease;
+    background-image: linear-gradient(rgba(110, 35, 35, 0.9), rgba(0, 0, 0, 0.6));
 }
 
 /* Contact Info */
