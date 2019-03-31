@@ -444,6 +444,19 @@ div.name-image-container>img.personal-photo {
         width: auto;   
         overflow-x: hidden;
     }
+
+    .name-image-container {
+        left: 0px;
+        width: 30%;
+        max-width: 40%;
+        transition: none;
+        top: 30%;
+    }
+
+    .name-image-container p {
+        font-size: 2vw;
+        margin-top: 15vw;
+    }
     
 
 }
