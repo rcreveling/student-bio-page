@@ -259,6 +259,10 @@ div.name-image-container>img.personal-photo {
     
     background-image: linear-gradient(rgba(110, 35, 70, 0.9), rgba(0, 0, 0, 0.6));
     transition: 3s ease;
+    -webkit-animation-name: name-container; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+    animation-name: name-container;
+    animation-duration: 20s;
 }
 .name-image-container:hover .name-image-container>img.personal-photo{
     transition: 3s ease;
@@ -314,7 +318,7 @@ div.name-image-container>img.personal-photo {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1vw;
     text-align: left;
-    transition: .3s ease;
+    transition: 3s ease;
     text-decoration: none;
     visibility: hidden;
    
@@ -408,6 +412,11 @@ div.name-image-container>img.personal-photo {
 
   .wrapper {
       overflow-x: hidden;
+  }
+
+  @keyframes name-container {
+    from {background-image: linear-gradient(rgba(110, 35, 70, 0.7), rgba(0, 0, 0, 0.6));}
+    to {background-image: linear-gradient(rgba(110, 35, 70, 0.9), rgba(0, 0, 0, 0.8))};
   }
 
 @media screen and (max-width: 768px) {
