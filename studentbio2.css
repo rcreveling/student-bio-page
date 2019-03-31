@@ -371,6 +371,7 @@ div.name-image-container>img.personal-photo {
     box-shadow: 2px 3px 2px 2px lawngreen;
     transition: 1s ease;
     padding-bottom: 10px;
+    z-index:2;
 }
 
 .hipsum {
@@ -380,14 +381,15 @@ div.name-image-container>img.personal-photo {
     font-size: 1.5vw;
     width: auto;
     max-width: 100%;
-    min-height: fit-content;
-    height: auto;
+    min-height: fill;
+    height: 21em;
     margin-right: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
     text-align: right;
     text-overflow: wrap;
     color: rgb(158, 158, 158);
+    z-index:2;
 }
 
 
@@ -545,14 +547,14 @@ div.name-image-container>img.personal-photo {
     .hipsum-container {
         bottom: 32em;
         right: 0em;
-        width: 60%;
-        max-width: 63vw;
+        width: 50%;
+        max-width: 60vw;
 
         
     }
 
     .hipsum {
-        font-size: 1.5vw;
-
+        font-size: 2vw;
+        height: 21em;
     }
 }
