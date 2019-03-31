@@ -317,6 +317,14 @@ div.name-image-container>img.personal-photo {
    
 }
 
+.contact-hover a {
+    color: white;
+}
+
+.contact-hover a:hover {
+    color: white;
+}
+
 .contact-info:hover {
     background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
     text-shadow:
@@ -334,13 +342,9 @@ div.name-image-container>img.personal-photo {
     overflow: hidden;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-image: linear-gradient(to right, rgba(110, 35, 35, 0.6), rgba(36, 45, 130, 0.7));
-    text-shadow:
-    -1px -1px 0 rgb(189, 189, 189),
-    1px -1px 0 rgb(189, 189, 189),
-    -1px 1px 0 rgb(189, 189, 189),
-    1px 1px 0 rgb(189, 189, 189);
     letter-spacing: 1px;
     text-decoration: none;
+    text-shadow: none;
     border-top: none;
     visibility: visible;
 }
@@ -403,11 +407,33 @@ div.name-image-container>img.personal-photo {
   }
 
 @media screen and (max-width: 768px) {
-	body {
-		background-color: #333;
-	}
 
-	.wrapper {
-		width: 600px;
-	}
+	.contact-hover {
+        font-size: 1.8vw;
+        padding-right: 5%;
+        text-overflow: visible, nowrap;
+    }
+    .contact-info:hover .contact-hover {
+        width: 97%;
+        text-shadow: none;
+    }
+
+    .about-me-container {
+        max-height: 36%;
+    }
+
+    .about-me-text {
+        font-size: 1.5vw;
+        padding-bottom: 5%;
+    }
+
+    #mySidenav a {
+        width: 100px;
+        right: -90px;
+        font-size: 2vw;
+        color: white;
+    }
+    #mySidenav a:hover {
+        text-shadow: none;
+    }
 }
