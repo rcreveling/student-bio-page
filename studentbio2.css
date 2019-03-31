@@ -104,7 +104,7 @@ h1 {
     }
     
     .main-navigation ul li:first-of-type {
-    border-right: 1px solid rgba(90, 90, 90, 0.8));
+    border-right: 1px solid rgba(90, 90, 90, 0.8);
     }
     
     .main-navigation ul ul li {
@@ -258,14 +258,14 @@ div.name-image-container>img.personal-photo {
 .name-image-container:hover {
     
     background-image: linear-gradient(rgba(110, 35, 70, 0.9), rgba(0, 0, 0, 0.6));
-    transition: 3s ease;
+    transition: 1s ease;
     -webkit-animation-name: name-container; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
     animation-name: name-container;
     animation-duration: 20s;
 }
 .name-image-container:hover .name-image-container>img.personal-photo{
-    transition: 3s ease;
+    transition: 1s ease;
     border-right: 2px;
     border-left: 2px;
 }
@@ -318,7 +318,7 @@ div.name-image-container>img.personal-photo {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1vw;
     text-align: left;
-    transition: 3s ease;
+    transition: .5s ease;
     text-decoration: none;
     visibility: hidden;
    
