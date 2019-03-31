@@ -308,7 +308,7 @@ div.name-image-container>img.personal-photo {
     right: 0;
     top: 50px;
     overflow: visible;
-    width: 10px;
+    width: 0px;
     height: auto;
     min-height: fit-content;
     max-height: 300px;
@@ -360,9 +360,10 @@ div.name-image-container>img.personal-photo {
 
 #mySidenav a {
     position: absolute; /* Position them relative to the browser window */
-    right: -190px; /* Position them outside of the screen */
+    right: -175px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 15px; /* 15px padding */
+    padding-left: 25px;
     width: 200px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Increase font size */
@@ -442,7 +443,7 @@ div.name-image-container>img.personal-photo {
     }
 
     #mySidenav a {
-        width: 100px;
+        width: 130px;
         right: -30px;
         font-size: 2vw;
         color: white;
