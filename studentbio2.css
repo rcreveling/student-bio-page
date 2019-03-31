@@ -106,14 +106,24 @@ h1 {
 
 .about-me-container {
     position: absolute;
+    object-fit: contain;
     left: 0;
     top: 12%;
-    width: 55%;
-    min-width: 45%;
-    height: 22%;
+    max-width: 55%;
+    width:auto;
+    max-height: calc(100% - 300px);
+    height:calc(auto+5%);
+    padding: 2px;
     background-color: rgba(114, 0, 143, 0.8);
     box-shadow: 2px 2px 2px #f5bff7;
     border-radius: 0px 180px 180px 0px;
+    overflow-x: visible; /* Use horizontal scroller if needed */
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    white-space : normal;
+
+    
 
 }
 
@@ -144,23 +154,27 @@ h1 {
 }
 
 .about-me-text {
-    content: auto;
+    display: block;
     padding-right: 10%;
+    padding-bottom: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 90%;
+    font-size: 1vw;
     color: rgb(158, 158, 158);
     position: relative;
     left: 50%;
     top: 20px;
-    width: 45%;
+    max-width: 45%;
+    width:auto;
     height: auto;
+
+
 
 }
 
 /* End purple Text Bar */
 
 .name-image-container {
-    padding-top: 2%;
+    padding-top: 5%;
     position: relative;
     height: 1000px;
     width: 20%;
@@ -169,7 +183,7 @@ h1 {
     text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px, 100%;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: 2px;
     min-width: text;
@@ -185,13 +199,13 @@ h1 {
 div.name-image-container>img.personal-photo {
     position: absolute;
     left: 5%;
-    min-width: 70%;
-    width: 90%;
-    min-height: 10%;
-    height: 23%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    max-height: 22%;
     box-shadow: 3px 3px 3px #383838;
     opacity: .90;
-    top: 11%;
+    top: 13%;
     border-radius: 50%;
 }
 
@@ -330,3 +344,13 @@ div.name-image-container>img.personal-photo {
     border-width: 1px;
     border-color: white;
   }
+
+@media screen and (max-width: 768px) {
+	body {
+		background-color: #333;
+	}
+
+	.wrapper {
+		width: 600px;
+	}
+}
