@@ -6,7 +6,8 @@ html {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    
+        height: auto;
+        min-height: fit-content;
 }
 
 html::after {
@@ -23,9 +24,11 @@ html::after {
 
 body {
     font-family: 'Cardo', serif;
-    height: 100%;
+    height: auto;
+    max-height: 100%;
     width: auto;   
     overflow-x: hidden;
+    overflow-y: wrap;
    }
    
    h1, h2, h3, h4, h5, h6, p, button, li, ul {
@@ -40,11 +43,7 @@ body {
     z-index: 1;
 }
 
-.clearfix::after {
-    content: “”;
-    display: block;
-    clear: both;
-}
+
 
 h1 {
     display: inline-block;
@@ -114,9 +113,9 @@ h1 {
 .primary-container {
     position: relative;
     min-height: 1000px;
-    height: 100%;
+    height: auto;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .nav-item:hover {
@@ -234,7 +233,7 @@ h1 {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    transition: 3s ease;
+    transition: 1s ease;
     z-index: 1;
     margin-bottom: 0;
 }
@@ -356,6 +355,63 @@ div.name-image-container>img.personal-photo {
     visibility: visible;
 }
 
+/* New bottom box thing */
+
+.hipsum-container {
+    position: relative;
+    float: right;
+    right: 0;
+    bottom: 30vw;
+    flex-wrap: wrap;
+    align-items: right;
+    margin-right: 0;
+    height: 22em;
+    background-color: rgba(48, 0, 138, 0.6);
+    border-radius: 30px 0 0 180px;
+    box-shadow: 2px 3px 2px 2px lawngreen;
+    transition: 1s ease;
+    padding-bottom: 10px;
+}
+
+.hipsum {
+    position: absolute;
+    float: right;
+    
+    font-size: 1.5vw;
+    width: auto;
+    max-width: 100%;
+    min-height: fit-content;
+    height: auto;
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    text-align: right;
+    text-overflow: wrap;
+    color: rgb(158, 158, 158);
+}
+
+
+
+.row {
+    display: block !important;
+    min-height: fit-content !important;
+
+}
+
+.hipsum-container:hover {
+    transition: 1s ease;
+    background-color: rgba(49, 0, 128, 0.9);
+    -webkit-animation-name: hipsum; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+    animation-name: hipsum;
+    animation-duration: 20s;
+}
+
+.hipsum-container:hover .hipsum {
+    transition: 1s ease;
+    color: rgb(223, 223, 223);
+
+}
 /* Side Nav Tester */
 
 #mySidenav a {
@@ -413,11 +469,26 @@ div.name-image-container>img.personal-photo {
 
   .wrapper {
       overflow-x: hidden;
+      overflow-y: hidden;
+    
+      height: auto;
+      max-height: 1005px;
   }
+
+  .clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
 
   @keyframes name-container {
     from {background-image: linear-gradient(rgba(110, 35, 70, 0.7), rgba(0, 0, 0, 0.6));}
     to {background-image: linear-gradient(rgba(110, 35, 70, 0.9), rgba(0, 0, 0, 0.8))};
+  }
+
+  @keyframes hipsum {
+    from {background-color: rgba(30, 0, 85, 0.6);}
+    to {background-color: rgba(46, 0, 133, 0.9);};
   }
 
 @media screen and (max-width: 768px) {
@@ -471,5 +542,17 @@ div.name-image-container>img.personal-photo {
         margin-top: 15vw;
     }
     
+    .hipsum-container {
+        bottom: 32em;
+        right: 0em;
+        width: 60%;
+        max-width: 63vw;
 
+        
+    }
+
+    .hipsum {
+        font-size: 1.5vw;
+
+    }
 }
