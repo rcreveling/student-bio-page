@@ -11,7 +11,7 @@ html {
 
 html::after {
     content: "";
-    background: url("abstract-astro-astronomy-956999.jpg") no-repeat center center fixed;
+    background: url("backgrounds-blank-blue-953214.jpg") no-repeat center center fixed;
     opacity: .5;
     top: 0;
     right: 0;
@@ -134,7 +134,7 @@ h1 {
     max-height: calc(100% - 300px);
     height:calc(auto+5%);
     padding: 2px;
-    background-image: linear-gradient(to right, rgba(100, 17, 93, 1), rgba(83, 51, 138, 0.8));
+    background-image: linear-gradient(to right, rgba(100, 17, 93, 1), rgba(51, 81, 138, 0.8));
     box-shadow: 2px 2px 2px #f5bff7;
     border-radius: 0px 180px 180px 0px;
     overflow-x: visible; /* Use horizontal scroller if needed */
@@ -207,7 +207,7 @@ h1 {
     transition: 1s ease;
 }
 .about-me-container:hover {
-    background-image: linear-gradient(to right, rgba(100, 17, 93, 1), rgba(96, 68, 143, .9));
+    background-image: linear-gradient(to right, rgba(100, 17, 93, 1), rgba(51, 81, 138, 0.9));
     transition: 3s ease;
 }
 /* End purple Text Bar */
@@ -254,14 +254,16 @@ div.name-image-container>img.personal-photo {
     border-radius: 50%;
 }
 
+
+.name-image-container:hover {
+    
+    background-image: linear-gradient(rgba(110, 35, 70, 0.9), rgba(0, 0, 0, 0.6));
+    transition: 3s ease;
+}
 .name-image-container:hover .name-image-container>img.personal-photo{
     transition: 3s ease;
     border-right: 2px;
     border-left: 2px;
-}
-.name-image-container:hover {
-    transition: 3s ease;
-    background-image: linear-gradient(rgba(110, 35, 35, 0.9), rgba(0, 0, 0, 0.6));
 }
 
 /* Contact Info */
@@ -360,18 +362,15 @@ div.name-image-container>img.personal-photo {
     width: 200px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Increase font size */
-    color: black; /* White text color */
+    color: white; /* White text color */
     border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
     overflow: hidden;
   }
   
   #mySidenav a:hover {
     right: 0; /* On mouse-over, make the elements appear as they should */
-    text-shadow:
-    -1px -1px 0 rgb(189, 189, 189),
-    1px -1px 0 rgb(189, 189, 189),
-    -1px 1px 0 rgb(189, 189, 189),
-    1px 1px 0 rgb(189, 189, 189);
+    border: 2px;
+
   }
   
   /* The about link: 20px from the top with a green background */
@@ -407,6 +406,10 @@ div.name-image-container>img.personal-photo {
     border-color: white;
   }
 
+  .wrapper {
+      overflow-x: hidden;
+  }
+
 @media screen and (max-width: 768px) {
 
 	.contact-hover {
@@ -431,7 +434,7 @@ div.name-image-container>img.personal-photo {
 
     #mySidenav a {
         width: 100px;
-        right: -90px;
+        right: -30px;
         font-size: 2vw;
         color: white;
     }
